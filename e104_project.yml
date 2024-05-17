@@ -1,0 +1,20 @@
+# Update conda: conda update -n base -c defaults conda
+# Create: conda env create --file e104_project.yml
+# Remove: conda remove --name e104_project --all
+# Activate: conda activate e104_project
+# To get all libraries versions: pip list --format=freeze > requirements.txt
+
+name: e104_project
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+- python==3.10
+- pip
+- gputil
+- langchain==0.1.12
+- jupyterlab
+- llama-cpp-python
+
